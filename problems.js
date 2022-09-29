@@ -7,7 +7,7 @@ function divideByThree(num) {
 function averageOfTwo(num1, num2) {
     /* Returns the average of two numbers, num1 and num2. */
     // Your code here
-    return (num1 + num2) / 2 ;
+    return (num1 + num2) / 2;
 };
 
 function averageOfFour(num1, num2, num3, num4) {
@@ -23,9 +23,9 @@ function doubler(nums) {
     /* Takes an array of numbers and returns a new array where every element of
     the original array is multiplied by 2. */
     // Your code here
-    const double = nums.map(num => num * 2)
+    const double = nums.map(num => num * 2);
 
-    return double
+    return double;
 
     // let newArr = []
 
@@ -46,14 +46,19 @@ function combineArrays(arr1, arr2) {
     either array. */
     // Your code here
 
-    return arr1.concat(arr2)
+    return arr1.concat(arr2);
 };
 
 function wordWithinArray(word, arr) {
     /* Takes in both a word and an array of words as arguments and returns a
     boolean that returns true if that string is located inside of the array, or
-    false if it does not. Use `Array.indexOf`. */
+    false if it does not; Use `Array.indexOf`. */
     // Your code here
+
+    if (arr.indexOf(word)) {
+        return true;
+    } else
+        return false;
 };
 
 function echo(str) {
@@ -62,12 +67,22 @@ function echo(str) {
     echo("hey"); // => returns "HEY ... hey ... hey"
     echo("JUMp"); // => returns "JUMP ... JUMp ... jump" */
     // Your code here
+
+    return str.toUpperCase() + " ... " + str.charAt(0).toUpperCase() + str.slice(1) + " ... " + str.toLowerCase();
 };
 
 function fizzBuzz(max) {
     /* Takes a number, max and returns an array that contains every number from
     0 to max (not inclusive) that is divisible by either 3 or 5, **but not both**. */
     // Your code here
+    let newArr = []
+
+    for (let i = 0; i < max; i++) {
+        if ((i % 3 === 0 || i % 5 === 0) && !(i % 3 === 0 && i % 5 === 0)) {
+            newArr.push(i)
+        }
+    }
+    return newArr
 };
 
 function hello(name) {
@@ -134,5 +149,5 @@ module.exports = {
     isFive,
     isOdd,
     isSubString,
-    aCounter   
+    aCounter
 }
