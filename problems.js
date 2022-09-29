@@ -1,23 +1,42 @@
 function divideByThree(num) {
     /* Returns the passed in number argument divided by three. */
     // Your code here
+    return num / 3;
 };
 
 function averageOfTwo(num1, num2) {
     /* Returns the average of two numbers, num1 and num2. */
     // Your code here
+    return (num1 + num2) / 2 ;
 };
 
 function averageOfFour(num1, num2, num3, num4) {
     /* Takes in four numbers. The function should return the average of all of
     the numbers. */
     // Your code here
+    let sum = num1 + num2 + num3 + num4;
+
+    return sum / 4;
 };
 
 function doubler(nums) {
     /* Takes an array of numbers and returns a new array where every element of
     the original array is multiplied by 2. */
     // Your code here
+    const double = nums.map(num => num * 2)
+
+    return double
+
+    // let newArr = []
+
+    // for (let i = 0; i < nums.length; i++) {
+    //     let doubled = nums[i] * 2
+
+
+    //     newArr.push(doubled)
+    // }
+
+    // return newArr
 };
 
 function combineArrays(arr1, arr2) {
@@ -26,6 +45,8 @@ function combineArrays(arr1, arr2) {
     calling this method won't permanently change, also known as **mutate**,
     either array. */
     // Your code here
+
+    return arr1.concat(arr2)
 };
 
 function wordWithinArray(word, arr) {
