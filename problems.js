@@ -88,23 +88,30 @@ function fizzBuzz(max) {
 function hello(name) {
     /* Takes in a string name and returns a string saying "Hello, " to that name. */
     // Your code here
+    return `Hello, ${name}`
 };
 
 function goodbye(name) {
     /* Takes in a string name and returns a string saying "Bye, " to that name. */
     // Your code here
+    return `Bye, ${name}`
 };
 
 function isFive(num) {
     /* Takes in a number, num, and returns `true` if a number is equal to 5 and
     `false` if it is not. */
     // Your code here
+    if (num === 5) {
+        return true
+    }
+    return false
 };
 
 function isOdd(num) {
     /* Takes in a number and returns `true` if the number is odd and returns
     `false` otherwise. Try writing this with and without `if` statements */
     // Your code here
+    return (num % 2 === 1 )
 };
 
 function isSubString(searchString, subString) {
@@ -112,6 +119,7 @@ function isSubString(searchString, subString) {
     `true` if `subString` is a part of the`searchString`, regardless of upper
     or lower case, and `false` if otherwise. */
     // Your code here
+    
 };
 
 function aCounter(word) {
